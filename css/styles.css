@@ -3,12 +3,10 @@ html{
     margin: 0;
     width: 100%;
 }
-body{
-}
 header {
     margin: 0;
     padding: 0;
-    background: rgba(0,0,0,);
+    background: rgba(0,0,0,0);
     box-shadow: 5px 5px rgba(0,0,0,0);
     border-radius: 30px;
     border-color: rgba(0,0,0,0);
@@ -34,6 +32,7 @@ header h1 {
     text-decoration-color: aqua;
     text-shadow: 3px 3px #f0f;
     opacity: 1.0;
+    animation: color 0.5s infinite;
 }
 
 nav{
@@ -48,7 +47,7 @@ nav{
 }
 
 nav.black{
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,1  );
     height: 100px;
     padding: 10px 100px;
 }
@@ -94,6 +93,7 @@ section.sec1{
     background-position: center;
     padding: 0;
     margin: 0;
+    animation: float 1s infinite;
 }
 
 .content {
@@ -121,4 +121,16 @@ li:hover{
     background: red;
     border-radius: 10px;
     box-shadow: 3px 3px #a00;
+}
+
+@keyframes color{
+ 50%{
+     color: #fff;
+ }
+}
+
+@keyframes float{
+    50%{
+        margin: 3px;
+    }
 }
