@@ -93,7 +93,7 @@ section.sec1{
     background-position: center;
     padding: 0;
     margin: 0;
-    animation: float 1s infinite;
+    animation: bgfloat 15s infinite;
 }
 
 .content {
@@ -128,9 +128,8 @@ li:hover{
      color: #fff;
  }
 }
-
-@keyframes float{
-    50%{
-        margin: 3px;
-    }
+@keyframes bgfloat{
+  50%{
+    background-position-y: -1px;
+  }
 }
